@@ -1,16 +1,73 @@
-# React + Vite
+# Web Development Project 5 - **Brewery Explorer Dashboard**
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Submitted by: **Sumaiya Shumu**
 
-Currently, two official plugins are available:
+This web app displays brewery information from the Open Brewery DB API in an interactive dashboard. Users can browse breweries, search by name, filter by brewery type, and view summary statistics about the dataset.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Time spent: **5** hours spent in total
 
-## React Compiler
+## Required Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+The following **required** functionality is completed:
 
-## Expanding the ESLint configuration
+* [x] **The site has a dashboard displaying a list of data fetched using an API call**
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+  * [x] The dashboard displays at least 10 unique items, one per row
+  * [x] Each row includes multiple features such as brewery name, location, and brewery type
+* [x] **`useEffect` React hook and `async`/`await` are used**
+* [x] **The app dashboard includes at least three summary statistics about the data**
+
+  * [x] Total number of breweries displayed
+  * [x] Number of unique states represented
+  * [x] Most common brewery type
+* [x] **A search bar allows the user to search for an item in the fetched data**
+
+  * [x] The search bar correctly filters breweries by name
+  * [x] Results update dynamically as the user types
+* [x] **An additional filter allows the user to restrict displayed items by specified categories**
+
+  * [x] A dropdown filters breweries by brewery type
+  * [x] The filter uses a different attribute than the search bar
+  * [x] Results update dynamically when the selected filter changes
+
+The following **optional** features are implemented:
+
+* [x] Multiple filters can be applied simultaneously
+* [x] Filters use different input types
+
+  * Text input for searching
+  * Dropdown menu for brewery type
+* [ ] The user can enter specific bounds for filter values
+
+The following **additional** features are implemented:
+
+* [x] Modern dark-themed dashboard design
+* [x] Responsive card layout
+* [x] Styled statistic cards
+* [x] Brewery type badges
+* [x] Responsive search and filter controls
+
+## Video Walkthrough
+
+Here's a walkthrough of implemented user stories:
+
+<img src="YOUR_GIF_LINK_HERE" title="Video Walkthrough" width="700" alt="Video Walkthrough" />
+
+GIF created with **ScreenToGif**
+
+## Notes
+
+One of the biggest challenges was working with data from the API and calculating summary statistics while ensuring the search and filter updated the dashboard correctly. Styling the dashboard to resemble a modern analytics interface while keeping the code organized was also an important part of the project.
+
+## License
+
+Copyright 2026 Sumaiya Shumu
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and limitations under the License.
