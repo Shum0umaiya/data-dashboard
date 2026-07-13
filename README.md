@@ -1,63 +1,62 @@
-# Web Development Project 5 - **Brewery Explorer Dashboard**
+# Web Development Project 6 - Brewery Explorer Dashboard Part 2
 
 Submitted by: **Sumaiya Shumu**
 
-This web app displays brewery information from the Open Brewery DB API in an interactive dashboard. Users can browse breweries, search by name, filter by brewery type, and view summary statistics about the dataset.
+This web app is an interactive brewery dashboard built with React that uses the Open Brewery DB API. Users can browse breweries across the United States, search and filter the data, explore interactive charts, and click any brewery to view a dedicated detail page with additional information such as address, phone number, website, and location.
 
-Time spent: **5** hours spent in total
+Time spent: **8** hours spent in total
 
 ## Required Features
 
 The following **required** functionality is completed:
 
-* [x] **The site has a dashboard displaying a list of data fetched using an API call**
+- [x] **Clicking on an item in the list view displays more details about it**
+  - [x] Clicking on a brewery navigates to its own detail page
+  - [x] Detail view displays additional information including address, phone number, postal code, website, and country
+  - [x] The same sidebar is displayed in both the dashboard and detail views
+  - [x] Sidebar remains visible during navigation
 
-  * [x] The dashboard displays at least 10 unique items, one per row
-  * [x] Each row includes multiple features such as brewery name, location, and brewery type
-* [x] **`useEffect` React hook and `async`/`await` are used**
-* [x] **The app dashboard includes at least three summary statistics about the data**
+- [x] **Each detail view of an item has a direct, unique URL link to that item’s detail view page**
+  - [x] Each brewery has its own unique route using React Router (`/brewery/:id`)
+  - [x] URL changes when navigating to a brewery detail page
 
-  * [x] Total number of breweries displayed
-  * [x] Number of unique states represented
-  * [x] Most common brewery type
-* [x] **A search bar allows the user to search for an item in the fetched data**
+- [x] **The app includes at least two unique charts developed using the fetched data that tell an interesting story**
+  - [x] Pie Chart showing the distribution of brewery types
+  - [x] Bar Chart showing the states with the highest number of breweries
+  - [x] Each visualization highlights a different aspect of the dataset
 
-  * [x] The search bar correctly filters breweries by name
-  * [x] Results update dynamically as the user types
-* [x] **An additional filter allows the user to restrict displayed items by specified categories**
+## Optional Features
 
-  * [x] A dropdown filters breweries by brewery type
-  * [x] The filter uses a different attribute than the search bar
-  * [x] Results update dynamically when the selected filter changes
+- [x] The site's customized dashboard contains more content explaining the dataset
+  - Added descriptive sections explaining what each chart represents
+  - Added helpful descriptions for searching and filtering breweries
 
-The following **optional** features are implemented:
+- [ ] The site allows users to toggle between different data visualizations
 
-* [x] Multiple filters can be applied simultaneously
-* [x] Filters use different input types
+## Additional Features
 
-  * Text input for searching
-  * Dropdown menu for brewery type
-* [ ] The user can enter specific bounds for filter values
-
-The following **additional** features are implemented:
-
-* [x] Modern dark-themed dashboard design
-* [x] Responsive card layout
-* [x] Styled statistic cards
-* [x] Brewery type badges
-* [x] Responsive search and filter controls
+- [x] Responsive modern dashboard design
+- [x] Dynamic summary statistics
+- [x] Loading indicator while fetching API data
+- [x] Error handling for failed API requests
+- [x] Search and dropdown filters work simultaneously
+- [x] Brewery type badges
+- [x] Responsive sidebar navigation
+- [x] Clickable external brewery website links
+- [x] Dashboard updates dynamically based on filters
+- [x] Clean component-based React architecture
 
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
 
-<img src="walkthrough.gif" title="Video Walkthrough" width="700" alt="Video Walkthrough" />
+<img src="./walkthrough.gif" title="Video Walkthrough" width="700" alt="Video Walkthrough" />
 
 GIF created with **ScreenToGif**
 
 ## Notes
 
-One of the biggest challenges was working with data from the API and calculating summary statistics while ensuring the search and filter updated the dashboard correctly. Styling the dashboard to resemble a modern analytics interface while keeping the code organized was also an important part of the project.
+One of the biggest challenges in this project was refactoring the original dashboard into multiple reusable React components while introducing React Router for navigation. Implementing dynamic routes with `useParams`, integrating Recharts for data visualizations, and ensuring the dashboard remained responsive required careful planning. Error handling and component organization also improved significantly compared to the first version of the project.
 
 ## License
 
